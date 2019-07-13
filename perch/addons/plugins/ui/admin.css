@@ -1,0 +1,120 @@
+/* CSS color variables */
+:root {
+  --main-admin-color: rgba(36, 33, 32, 0.349);
+  --accent-admin-color: rgb(253, 253, 253);
+  --dark-admin-color: #4d4d4d;
+  --button-color: rgb(118, 150, 204);
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Header background colour for main page content boxes */
+.dash-content header {
+  background-color: var(--main-admin-color);
+}
+
+/* Bold text for various various headings labels and taskbars */
+.form-simple label,
+.form-simple .fieldset-inner .legend-wrap,
+.repeater-heading {
+  font-weight: bold;
+}
+
+/* Color for admin dividers */
+.divider,
+.ui-sortable-handle,
+.smartbar {
+  font-weight: bold;
+  font-size: 1.15em;
+  background-color: var(--main-admin-color) !important;
+}
+
+.divider,
+.smartbar {
+  outline: 1px solid var(--dark-admin-color);
+}
+
+/* Better definition for repeater */
+.repeater {
+  margin-left: 72px;
+  border-bottom: 0;
+}
+
+.repeated-item {
+  margin-bottom: .5rem;
+  border: 1px solid var(--main-admin-color);
+
+}
+
+.repeated-fields {
+  background-color: var(--accent-admin-color);
+}
+
+.repeater-footer {
+  border: 1px solid var(--main-admin-color);
+}
+
+/* Outline for blocks add bar */
+.block-add-bar {
+  border: 1px solid var(--dark-admin-color);
+  padding: 10px;
+}
+
+
+/* Making link text more visible */
+a.primary:link,
+a.primary:visited,
+.primary {
+  font-weight: bold;
+}
+
+/* Button border and background colour */
+.title-panel .button,
+.button.to-the-top,
+.button.button-small.button-icon.icon-left.action-info,
+.title-panel .button.button-icon {
+  background-color: var(--button-color);
+  border: 1px solid var(-var(--button-color));
+  color: var(--accent-admin-color);
+}
+
+/* Button text and fill colour */
+.button.to-the-top.button-icon svg,
+.title-panel .button.button-icon svg,
+.button.button-small.button-icon.icon-left.action-info,
+.button.button-small.button-icon.icon-left.action-info svg,
+.button.to-the-top.button-icon  span,
+.title-panel .button.button-icon  span {
+  fill: var(--accent-admin-color);
+  color: var(--accent-admin-color);
+  font-weight: bold;
+}
+
+
+/* Adjusting smartbar and divider icon position for larger fonts */
+.smartbar a svg, .smartbar button svg {
+  margin-top: 6px;
+}
+
+.divider-toggle {
+  position: relative;
+  bottom: 4px;
+}
+
+/* Lighter color for smartbar active tab */
+.tab-active {
+  background-color: var(--accent-admin-color) !important;
+}
+
+/* Hides markitup header so users don't format embedded code. */
+div.markItUpHeader {
+  display: none;
+  visibility: hidden;
+}

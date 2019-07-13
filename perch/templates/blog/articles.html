@@ -1,0 +1,31 @@
+<article class="blog-post-articles">
+
+  <h2 class="blog-post-articles-title"><a href="<perch:blog id="postURL" />"><perch:blog id="postTitle" /></a></h2>
+
+<div class="blog-post-articles-div">
+  <a class="blog-post-articles-image-link" href="<perch:blog id="postURL" />">
+    <img class="blog-post-articles-image" src="<perch:blog id="blog-index-image" type="image" width="300" />" alt="<perch:blog id="postTitle" />" />
+  </a>
+
+  <perch:blog class="blog-post-articles-excerpt" id="blog-index-excerpt" html="true" />
+
+  <p class="blog-post-articles-date-time">
+    <perch:blog id="postDateTime"  format="%d %B %Y" />
+  </p>
+</div>
+</article>
+
+<perch:after>
+    <perch:if exists="paging">
+        <div class="paging">
+            Page <perch:blog id="current_page" /> of <perch:blog id="number_of_pages" />
+            <perch:blog id="page_links" encode="false" />
+            <perch:if exists="not_first_page">
+                <a href="<perch:blog id="prev_url" encode="false" />">Previous</a>
+            </perch:if>
+            <perch:if exists="not_last_page">
+                <a href="<perch:blog id="next_url" encode="false" />">Next</a>
+            </perch:if>
+        </div>
+    </perch:if>
+</perch:after>

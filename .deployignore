@@ -1,0 +1,8 @@
+## Directories to ignore
+sass/**
+scripts/js/**
+.htaccess
+.gitignore
+.scss-lint.yml
+perch/config/config.php
+perch/resources/

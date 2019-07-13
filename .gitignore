@@ -1,0 +1,8 @@
+prepros.cfg
+perch/config/config.php
+perch/resources/
+.htaccess
+.htaccess-ref
+*.db
+prepros-6.config
+.vscode/settings.json

@@ -1,0 +1,45 @@
+// Colour, font stacks,  that kind of thing.
+// This file is imported before style.scss and after _normalize.scss
+
+//********** Colour variables  **********
+
+//Main colours
+$main-colour: #f36523;
+
+//Link colours
+$link-color: #3c65a4;
+$link-hover: #162c8c;
+$link-visited: #8E2E01;
+
+//Font colours
+$font-color: #363636;
+$lighter-font-color: #4a4a4a;
+$light-font-color: #f0f0f0;
+
+//Background colours
+$background-one: #555;
+$background-two: #f2f2f2;
+$background-three: #dedcdc;
+$background-four: #cecece;
+$background-five: #e6e6e6;
+$white: #fff;
+$black: #000;
+
+
+
+//********** Typograpy **********
+
+//***** Font stacks *****
+
+$font-stack: "proxima-nova", sans-serif;
+$heading-font-stack: "museo-slab", serif;
+
+//********** Transition Variable **********
+
+$transition-duration-one: 0.4s  ease-in-out 0s;
+
+//********** Spacing **********
+
+//Blog Post Bottom Spacing
+
+$post-bottom-spacing: 30px;

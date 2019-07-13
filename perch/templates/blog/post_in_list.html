@@ -1,0 +1,38 @@
+<article class="blog-index-listing">
+
+  <a class="blog-index-image-link" href="<perch:blog id="postURL" />">
+
+    <img class="blog-index-listing-image" src="<perch:blog id="blog-index-image" type="image" width="1100"  />" alt="<perch:blog id="postTitle" />"
+    sizes="(max-width: 750px) 90%,
+          (max-width: 1100px) 80%,
+          (max-width: 1500px) 70%, 50%"
+    srcset="<perch:blog type="image" id="blog-index-image" width="1100" /> 1100w
+            <perch:blog type="image" id="blog-index-image" width="700" /> 700w,
+            <perch:blog type="image" id="blog-index-image" width="900" /> 900w,
+            <perch:blog type="image" id="blog-index-image" width="550" /> 550w,
+            <perch:blog type="image" id="blog-index-image" width="400" /> 400w">
+</a>
+  <h2 class="blog-index-listing-title"><a href="<perch:blog id="postURL" />"><perch:blog id="postTitle" /></a></h2>
+
+  <perch:blog id="blog-index-excerpt" html="true" />
+
+  <p class="blog-index-date-time">
+    <perch:blog id="postDateTime"  format="%d %B %Y" />
+  </p>
+
+</article>
+
+<perch:after>
+    <perch:if exists="paging">
+        <div class="paging">
+            Page <perch:blog id="current_page" /> of <perch:blog id="number_of_pages" />
+            <perch:blog id="page_links" encode="false" />
+            <perch:if exists="not_first_page">
+                <a href="<perch:blog id="prev_url" encode="false" />">Previous</a>
+            </perch:if>
+            <perch:if exists="not_last_page">
+                <a href="<perch:blog id="next_url" encode="false" />">Next</a>
+            </perch:if>
+        </div>
+    </perch:if>
+</perch:after>

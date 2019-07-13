@@ -1,0 +1,117 @@
+    // ***** General *****
+
+      * {
+      box-sizing: border-box;
+    }
+
+    html {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body,
+    article,
+    div,
+    main,
+    section,
+    aside,
+    header,
+    nav,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    img,
+    em,
+    strong,
+    span,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    form,
+    label,
+    footer,
+    button,
+    input,
+    select,
+    textarea {
+      border: 0;
+      margin: 0;
+      outline: none;
+      padding: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+      font-size: inherit;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      color: inherit;
+      font: inherit;
+    }
+
+
+    // ***** Element specific *****
+
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+
+    a,
+    button {
+      color: inherit;
+    }
+
+    a {
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    :focus {
+      outline: 0;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+
+    // ***** Browser taming *****
+
+    ::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
+
+    button {
+      background: none;
+      cursor: pointer;
+      -webkit-font-smoothing: inherit;
+      letter-spacing: inherit;
+      overflow: visible;
+    }
+    
